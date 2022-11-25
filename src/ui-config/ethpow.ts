@@ -1,0 +1,1 @@
+export const ethpow = 10001;
