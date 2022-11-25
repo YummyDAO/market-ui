@@ -1,0 +1,20 @@
+import { ReactElement, ReactNode } from 'react';
+import './style.scss';
+declare type SwitcherProps = {
+    onSwitch: (value: boolean) => void;
+    offLabel?: string | ReactNode;
+    onLabel?: string | ReactNode;
+    onColor?: string;
+    offColor?: string;
+    value: boolean | undefined;
+    disabled?: boolean;
+    swiperHeight: number;
+    swiperWidth: number;
+    withOutDelay?: boolean;
+    className?: string;
+    classNameSwiper?: string;
+    uncheckedIcon?: ReactElement | boolean;
+    checkedIcon?: ReactElement | boolean;
+};
+export default function Switcher({ onSwitch, onLabel, offLabel, value, onColor, offColor, disabled, swiperHeight, swiperWidth, withOutDelay, className, classNameSwiper, checkedIcon, uncheckedIcon, }: SwitcherProps): JSX.Element;
+export {};

@@ -15,7 +15,6 @@ web-report/
 .DS_Store
 .vscode
 yarn-error.log
-dist/
 .idea
 web-build
 yalc.lock
