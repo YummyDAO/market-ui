@@ -134,7 +134,7 @@
     "prepare": "husky install",
     "pre-commit": "lint-staged && npm run i18n && git add ./src/translations",
     "analyze": "npx source-map-explorer 'build/static/js/*.js'",
-    "postinstall1": "rm -r ./node_modules/@aave/aave-ui-kit/* && cp -r protocol1-js/* ./node_modules/@aave/aave-ui-kit"
+    "postinstall": "rm -r ./node_modules/@aave/aave-ui-kit/* && cp -r protocol1-js/* ./node_modules/@aave/aave-ui-kit"
   },
   "engines": {
     "node": "16.13.1",
