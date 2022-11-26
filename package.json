@@ -122,7 +122,7 @@
     "build:ipfs": "REACT_APP_IPFS_MODE=true npm run build",
     "test": "DOTENV_CONFIG_PATH='.env.local' cypress run --config watchForFileChanges=false numTestsKeptInMemory=0 --browser chrome",
     "test:main": "npx cypress-repeat run -n 2 --rerun-failed-only --spec \"cypress/integration/0-main-market/**/*.spec.ts\"",
-    "test:amm": "npx cypress-repeat run -n 2 --rerun-failed-only --spec \"cypress/integration/1-amm-market/**/*.spec.ts\"",
+    "test:amm": "npx cypress-repeat run -n 2 --rerun-failed-only --s4pec \"cypress/integration/1-amm-market/**/*.spec.ts\"",
     "test:polygon": "npx cypress-repeat run -n 2 --rerun-failed-only --spec \"cypress/integration/2-polygon-market/**/*.spec.ts\"",
     "test:avalanche": "npx cypress-repeat run -n 2 --rerun-failed-only --spec \"cypress/integration/3-avalanche-market/**/*.spec.ts\"",
     "test:ci": "start-server-and-test start:prod http://localhost:3000 test",
@@ -133,7 +133,12 @@
     "i18n": "NODE_ENV=development node ./scripts/extract-intl-messages.js",
     "prepare": "husky install",
     "pre-commit": "lint-staged && npm run i18n && git add ./src/translations",
-    "analyze": "npx source-map-explorer 'build/static/js/*.js'"
+    "analyze": "npx source-map-explorer 'build/static/js/*.js'",
+    "postinstall1": "rm -r ./node_modules/@aave/aave-ui-kit/* && cp -r protocol1-js/* ./node_modules/@aave/aave-ui-kit"
+  },
+  "engines": {
+    "node": "16.13.1",
+    "npm": "8.1.2"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
