@@ -67,7 +67,7 @@
     "strip-hex-prefix": "^1.0.0",
     "styled-jsx": "^4.0.1",
     "subscriptions-transport-ws": "^0.10.0",
-    "tsparticles": "^1.36.0",
+    "tsparticles": "^2.6.0",
     "use-debounce": "^7.0.0",
     "web3-provider-engine": "^16.0.3"
   },
