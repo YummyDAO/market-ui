@@ -56,7 +56,7 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
   },
   [ethpow]: {
     name: 'Ethereumpow',
-    publicJsonRPCUrl: ['https://ethw-mainnet.nodereal.io/v1/68781259a8c048bb84549e07d6f1cb0a'],
+    publicJsonRPCUrl: ['https://mainnet.ethereumpow.org'],
     //publicJsonRPCWSUrl: 'wss://eth-mainnet.alchemyapi.io/v2/demo',
     addresses: {
       walletBalanceProvider: '0x3AE625206604A02D708245A14f9CC02315BB4A6F',
